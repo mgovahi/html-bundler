@@ -1,5 +1,5 @@
 {
-  "name": "html-bundler",
+  "name": "static-html-bundler",
   "version": "1.0.0",
   "description": "html bundler",
   "main": "index.js",
