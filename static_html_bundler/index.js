@@ -77,6 +77,7 @@ class StaticHtmlBundler{
 	}
 }
 
+
 module.exports = new StaticHtmlBundler();
 
 
