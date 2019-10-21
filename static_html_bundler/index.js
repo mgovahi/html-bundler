@@ -43,7 +43,7 @@ class StaticHtmlBundler{
 	generateBundleContent(pathes){
 		var bundleList = [];
 		pathes.forEach(path => {
-			var fileData = this.fileManager.readFile("./"+this.sourceFolder+path);
+			var fileData = this.fileManager.readFile("./"+this.sourceFolder+path.split("?")[0]);
 			bundleList.push(fileData);
 		});
 		
