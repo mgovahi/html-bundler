@@ -1,0 +1,25 @@
+{
+	"sourceFolder":"resources/",
+	"distFolder" :"dist/",
+	"jsFolder" :"js/",
+	"cssFolder":"css/",
+	"inputHtml":"./resources/index.html",
+	"outputHtml" :"./dist/index.html",
+	"tags" : [
+		{
+			"start": "<!-- bundle 1 start-->",
+			"end": "<!-- bundle 1 end-->",
+			"type" :"css",
+			"name" : "bundle-css-1"
+		
+		},
+		{
+			"start": "<!-- bundle 2 start-->",
+			"end": "<!-- bundle 2 end-->",
+			"type" :"js",
+			"name" : "bundles-js-1"
+		}
+		
+	]
+	
+}
