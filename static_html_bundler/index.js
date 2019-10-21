@@ -2,7 +2,7 @@ const FileManager = require('./modules/fileManager');
 const PageParser = require('./modules/pageParser');
 const Uglifire = require('./modules/uglifier');
 
-class HtmlBundler{
+class StaticHtmlBundler{
 	constructor(
 		fileManager =new FileManager(),
 		pageParser = new PageParser(),
@@ -77,7 +77,7 @@ class HtmlBundler{
 	}
 }
 
-module.exports = new HtmlBundler();
+module.exports = new StaticHtmlBundler();
 
 
 

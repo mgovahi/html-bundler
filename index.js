@@ -1,9 +1,9 @@
-const htmlBundler = require("./html_bundler/htmlBundler");
+const staticHtmlBundler = require("./static_html_bundler");
 
 const args = process.argv.slice(2);
 var config_data = require("./"+args[0]);
 
-htmlBundler.bundle({
+staticHtmlBundler.bundle({
 	tags: config_data.tags,
 	inputHtmlPath: config_data.inputHtml,
 	outputHtmlPath: config_data.outputHtml,
