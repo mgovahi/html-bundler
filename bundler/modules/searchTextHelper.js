@@ -4,7 +4,7 @@ class SearchTextHelper {
     if (textPiece !== null) {
       return textPiece[1];
     }
-    throw new Error(`Something went wrong during finding text between tags. Please, make sure you have both <!-- Bundler CSS ... --> and <!-- Bundler JS ... --> comment line sets in your template.`);
+    throw new Error(`Something went wrong during finding text between tags. Please, make sure you have both ${startTag} and ${endTag} comment line sets in your template.`);
   }
 
   findHrefSrcBetweenAll(text) {
@@ -13,7 +13,7 @@ class SearchTextHelper {
     if (textPiece !== null) {
       return textPiece;
     }
-    throw new Error(`Something went wrong during finding text between tags. Please, make sure you have both <!-- Bundler CSS ... --> and <!-- Bundler JS ... --> comment line sets in your template.`);
+    throw new Error(`Something went wrong during finding href or src between tags.` );
   }
 
   matchAll(text, regex) {

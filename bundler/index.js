@@ -24,10 +24,10 @@ class StaticHtmlBundler{
 		this.distCssFolder = options.distCssFolder;
 		this.distJsFolder = options.distJsFolder;
 
-
+		//read input html
 		var htmlData =  this.fileManager.readFile(this.inputHtmlPath);
 		if(!htmlData) return;
-		
+		//start bundling according tags in tags option
 		this.tags.forEach( tag => {
 			htmlData = this.bundleTag(htmlData,tag)
 		});
@@ -35,9 +35,15 @@ class StaticHtmlBundler{
 		this.fileManager.writeFile(htmlData,this.outputHtmlPath);
 	}
 	bundleTag(htmlData,tag){
+		//get pathes between tags
 		var pathes = this.pageParser.findPathesBetween(htmlData,tag.start,tag.end);
+		
+		//read pathes content and concat them
 		var bundleContent = this.generateBundleContent(pathes);
+		// write bundle content to new file
 		this.writeOutput(tag.type,bundleContent,tag.name);
+		
+		// return html content with replaced new files path (script or link)
 		return this.replaceBundleContent(htmlData,tag.start,tag.end,tag.name,tag.type);
 	}
 	generateBundleContent(pathes){

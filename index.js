@@ -1,4 +1,4 @@
-const staticHtmlBundler = require("./static_html_bundler");
+const staticHtmlBundler = require("./bundler");
 
 const args = process.argv.slice(2);
 var config_data = require("./"+args[0]);
