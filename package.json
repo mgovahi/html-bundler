@@ -25,6 +25,8 @@
     "static html",
     "javascript bundle",
     "css budnle"
-  ]
- 
+  ],
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
