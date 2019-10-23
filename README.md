@@ -1,5 +1,5 @@
 # static-html-bundler
-A a node module that creates bundle for html page assets. All stylesheet links and script tags will be bundle and minify to single file according input options.
+A node module that creates bundle for html page assets. All stylesheet links and script tags will be bundle and minify to single file according input options.
 
 options object is like below
 ```javascript
