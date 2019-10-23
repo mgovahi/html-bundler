@@ -17,8 +17,8 @@ class StaticHtmlBundler{
 	}
 	bundle(options){
 		this.tags = options.tags;
-		this.inputHtmlPath = options.inputHtmlPath;
-		this.outputHtmlPath = options.outputHtmlPath;
+		this.inputHtmlPath = options.inputHtml;
+		this.outputHtmlPath = options.outputHtml;
 		this.distFolder = options.distFolder;
 		this.sourceFolder = options.sourceFolder;
 		this.distCssFolder = options.distCssFolder;
