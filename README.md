@@ -6,10 +6,10 @@ options object is like below
     {
         "sourceFolder":"sampleResource/",
         "distFolder" :"dist/",
-        "jsFolder" :"js/",
-        "cssFolder":"css/",
-        "inputHtmlPath":"./sampleResource/index.html",
-        "outputHtmlPath" :"./dist/index.html",
+        "distJsFolder" :"js/",
+        "distCssFolder":"css/",
+        "inputHtml":"./sampleResource/index.html",
+        "outputHtml" :"./dist/index.html",
         "tags" : [
             {
                 "start": "<!-- css bundle 1 start-->",
