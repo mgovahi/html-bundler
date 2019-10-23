@@ -1,6 +1,6 @@
 {
   "name": "static-html-bundler",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "html bundler",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,10 @@
   "dependencies": {
     "uglify-es": "^3.3.9",
     "uglifycss": "0.0.29"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgovahi/static-html-bundler"
   }
+ 
 }
