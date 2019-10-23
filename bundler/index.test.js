@@ -46,12 +46,12 @@ describe('static html bundler',() => {
 		expect(fs.existsSync(MOCK.output.html)).toBe(true);
     })
     
-    test("html file contais css bundle", () =>{
+    test("html file contains css bundle link", () =>{
         const htmlData = fileManager.readFile(MOCK.output.html);
         expect(htmlData.includes(MOCK.CSS)).toBe(true);
     })
 
-    test("html file contais js bundle", () =>{
+    test("html file contains js bundle script", () =>{
         const htmlData = fileManager.readFile(MOCK.output.html);
         expect(htmlData.includes(MOCK.JS)).toBe(true);
     })
