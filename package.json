@@ -1,6 +1,6 @@
 {
   "name": "static-html-bundler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "html bundler",
   "main": "index.js",
   "scripts": {
