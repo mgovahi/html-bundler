@@ -1,6 +1,8 @@
 # static-html-bundler
 A node module that creates bundle for html page assets. All stylesheet links and script tags will be bundle and minify to single file according input options.
 
+This module read an html file as an entry point. All stylesheets or scripts found between start and end property of tags option, will be bundle and minify into single file. Then bundled content as a new link or script will be write betwean start and end tag in html file.  
+
 ## Install
 
 `npm install --save static-html-bundler`
