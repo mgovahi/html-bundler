@@ -1,9 +1,18 @@
 # static-html-bundler
 A node module that creates bundle for html page assets. All stylesheet links and script tags will be bundle and minify to single file according input options.
 
-options object is like below
+## Install
+
+`npm install --save static-html-bundler`
+
+## Use
+
+To use, Add below require command
+`const staticHtmlBundler = require("./static-html-bundler/bundler");`
+
+Then you will need to call "bundle" method of staticHtmlBundler object with this options object:
 ```javascript
-    {
+    const options = {
         "sourceFolder":"sampleResource/",
         "distFolder" :"dist/",
         "distJsFolder" :"js/",
@@ -28,4 +37,6 @@ options object is like below
         ]
         
     }
+    staticHtmlBundler.bundle(options)
 ```
+
