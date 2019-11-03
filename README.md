@@ -42,4 +42,71 @@ const options = {
 }
 staticHtmlBundler.bundle(options)
 ```
+## options
+
+### `sourceFolder`
+Type : `string` 
+Source folder name. This option will be used as a root folder to read JS/CSS files path.
+
+### `distFolder`
+Type : `string`
+
+Output folder name. This option will be used as a root folder to write bundled and minfied JS/CSS files.
+
+### `distJsFolder`
+Type : `string`
+
+Output JS bundled files path. This option will be concat to 'distFolder' option.
+
+### `distCssFolder`
+Type : `string`
+
+Output CSS bundles files path. This option will be conact to 'distFolder' option.
+
+### `inputHtml`
+Type : `string`
+
+Input html file path.
+
+### `outputHtml`
+Type : `string`
+
+Output html file path that contains JS/CSS bundled files.
+
+### `tags`
+Type : `Array`
+
+A list of tag objects that determine start and end of section in html file that contain scripts or stylesheet links. Every tag object contains this properties:
+
+#### `start`
+Type `string`
+
+Start tag as a starting point to bundle and minify scripts or links.
+
+#### `end`
+Type `string`
+
+End tag as ending point to bundle and minify scripts or links.
+
+#### `type`
+Type `string`
+
+Type of content between star and end tags. (css or js)
+
+
+#### `name`
+Type `string`
+
+Name of bundled files.
+
+
+## Methods
+
+### `.bundle`
+Param: `Object` 
+
+An option object
+
+
+
 
